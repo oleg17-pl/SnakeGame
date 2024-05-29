@@ -21,7 +21,7 @@ int main()
 	SetConsoleActiveScreenBuffer(hConsole);
 	SetConsoleCursorInfo(hConsole, &cursorInfo);
 
-	vec2<int> snakePos{ -60, 1 }, offset{ 0, 0 };
+	vec2<int> snakePos{ 1 }, offset{ 0 };
 	Game game(xsize, ysize, snakePos, offset);
 
 	game.DrawStatic(hConsole);
